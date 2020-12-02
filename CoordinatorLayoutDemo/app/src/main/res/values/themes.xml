@@ -1,0 +1,51 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="BaseTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge" />
+
+    <style name="Theme.Mighty" parent="BaseTheme">
+        <!-- Material color. -->
+        <item name="colorPrimary">@color/design_default_color_primary</item>
+        <item name="colorPrimaryVariant">@color/design_default_color_primary_variant</item>
+        <item name="colorPrimaryDark">?attr/colorPrimaryVariant</item>
+        <item name="colorSecondary">@color/design_default_color_secondary</item>
+        <item name="colorSecondaryVariant">@color/design_default_color_secondary_variant</item>
+        <item name="colorSurface">@color/design_default_color_surface</item>
+        <item name="colorPrimarySurface">?attr/colorPrimary</item>
+        <item name="colorOnPrimary">@color/design_default_color_on_primary</item>
+        <item name="colorOnSecondary">@color/design_default_color_on_secondary</item>
+        <item name="colorOnBackground">@color/design_default_color_on_background</item>
+        <item name="colorOnError">@color/design_default_color_on_error</item>
+        <item name="colorOnSurface">@color/design_default_color_on_surface</item>
+        <item name="colorOnPrimarySurface">?attr/colorOnPrimary</item>
+
+        <!-- Status bar color. -->
+        <!--        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>-->
+        <item name="android:statusBarColor" tools:targetApi="l">@android:color/transparent</item>
+
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Widget" parent="android:Widget">
+        <item name="android:textAppearance">?attr/textAppearanceBody1</item>
+    </style>
+
+    <style name="Widget.Mighty" />
+
+    <style name="Widget.Mighty.SimpleCard">
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">24dp</item>
+        <item name="android:paddingBottom">24dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="Theme.Mighty.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Mighty.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Mighty.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>
